@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.156
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Client.Core.DependencyInjection", "src\RabbitMQ.Client.Core.DependencyInjection\RabbitMQ.Client.Core.DependencyInjection.csproj", "{0C8EA737-64AC-4C41-8F80-11BFFEE23CE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moises.RabbitMQ.Client.Core.DependencyInjection", "src\RabbitMQ.Client.Core.DependencyInjection\Moises.RabbitMQ.Client.Core.DependencyInjection.csproj", "{0C8EA737-64AC-4C41-8F80-11BFFEE23CE2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{98236217-C249-4D30-8646-B1FCF4070910}"
 	ProjectSection(SolutionItems) = preProject
@@ -43,9 +43,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Client.Core.Depend
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.AdvancedConfiguration", "examples\Examples.AdvancedConfiguration\Examples.AdvancedConfiguration.csproj", "{0C713913-8D54-49E7-AADD-45497216E2EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.BatchMessageHandler", "examples\Examples.BatchMessageHandler\Examples.BatchMessageHandler.csproj", "{BC9BE326-AEFE-42F2-B592-80126188514D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.BatchMessageHandler", "examples\Examples.BatchMessageHandler\Examples.BatchMessageHandler.csproj", "{BC9BE326-AEFE-42F2-B592-80126188514D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.SslProducer", "examples\Examples.SslProducer\Examples.SslProducer.csproj", "{863CDE58-B16B-4058-8C48-DB78058DDDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples.SslProducer", "examples\Examples.SslProducer\Examples.SslProducer.csproj", "{863CDE58-B16B-4058-8C48-DB78058DDDC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
