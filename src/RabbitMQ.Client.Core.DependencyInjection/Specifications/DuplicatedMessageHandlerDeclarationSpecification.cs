@@ -33,7 +33,7 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Specifications
         {
             return x => x.ServiceType == typeof(MessageHandlerOrderingModel) &&
                 x.Lifetime == ServiceLifetime.Singleton &&
-                ((MessageHandlerOrderingModel)x.ImplementationInstance).MessageHandlerType == _implementationType &&
+                (x.ImplementationInstance != null ? ((MessageHandlerOrderingModel)x.ImplementationInstance).MessageHandlerType == _implementationType : false) &&
                 (string.Equals(((MessageHandlerOrderingModel)x.ImplementationInstance).Exchange, _exchange, StringComparison.OrdinalIgnoreCase) ||
                     (_exchange != null && ((MessageHandlerOrderingModel)x.ImplementationInstance).Exchange != null)) &&
                 (((MessageHandlerOrderingModel)x.ImplementationInstance)!).Order != _order &&

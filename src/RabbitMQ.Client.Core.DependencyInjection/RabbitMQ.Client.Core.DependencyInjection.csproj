@@ -4,11 +4,11 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>nullable</WarningsAsErrors>
-    <Version>5.0.0-alpha</Version>
+    <Version>7.0.0-alpha</Version>
     <PackageTags>RabbitMQ</PackageTags>
-    <RepositoryUrl>https://github.com/AntonyVorontsov/RabbitMQ.Client.Core.DependencyInjection</RepositoryUrl>
+    <RepositoryUrl>https://github.com/thiagomoises/RabbitMQ.Client.Core.DependencyInjection</RepositoryUrl>
     <RepositoryType>GIT</RepositoryType>
-    <PackageProjectUrl>https://github.com/AntonyVorontsov/RabbitMQ.Client.Core.DependencyInjection/blob/master/readme.md</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/thiagomoises/RabbitMQ.Client.Core.DependencyInjection/blob/master/readme.md</PackageProjectUrl>
     <Company />
     <Description>A RabbitMQ.Client wrapper that provides easy, managed, injectable (via standard dependency injection) message queue consume and publish operations.</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -22,10 +22,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.12" />
-    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.12" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.12" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.4" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
   </ItemGroup>
 </Project>

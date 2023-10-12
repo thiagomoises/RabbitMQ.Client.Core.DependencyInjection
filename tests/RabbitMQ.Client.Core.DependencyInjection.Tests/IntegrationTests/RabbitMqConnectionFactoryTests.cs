@@ -96,7 +96,9 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Tests.IntegrationTests
         {
             var connectionOptions = new RabbitMqServiceOptions
             {
-                HostName = "rabbitmq",
+                HostName = "localhost",
+                UserName = "thiago",
+                Password = "thiago",
                 InitialConnectionRetries = 1,
                 InitialConnectionRetryTimeoutMilliseconds = 20
             };
@@ -108,7 +110,9 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Tests.IntegrationTests
         {
             var connectionOptions = new RabbitMqServiceOptions
             {
-                HostName = "rabbitmq",
+                HostName = "localhost",
+                UserName = "thiago",
+                Password = "thiago",
                 ClientProvidedName = "connectionName",
                 InitialConnectionRetries = 3,
                 InitialConnectionRetryTimeoutMilliseconds = 20
@@ -125,9 +129,11 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Tests.IntegrationTests
                 {
                     new()
                     {
-                        HostName = "rabbitmq"
+                        HostName = "localhost"
                     }
                 },
+                UserName = "thiago",
+                Password = "thiago",
                 InitialConnectionRetries = 3,
                 InitialConnectionRetryTimeoutMilliseconds = 20
             };
@@ -139,7 +145,9 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Tests.IntegrationTests
         {
             var connectionOptions = new RabbitMqServiceOptions
             {
-                HostNames = new List<string> { "rabbitmq" },
+                HostNames = new List<string> { "localhost" },
+                UserName = "thiago",
+                Password = "thiago",
                 InitialConnectionRetries = 3,
                 InitialConnectionRetryTimeoutMilliseconds = 20
             };
@@ -151,7 +159,9 @@ namespace RabbitMQ.Client.Core.DependencyInjection.Tests.IntegrationTests
         {
             var connectionOptions = new RabbitMqServiceOptions
             {
-                HostNames = new List<string> { "rabbitmq" },
+                HostNames = new List<string> { "localhost" },
+                UserName = "thiago",
+                Password = "thiago",
                 ClientProvidedName = "connectionName",
                 InitialConnectionRetries = 3,
                 InitialConnectionRetryTimeoutMilliseconds = 20

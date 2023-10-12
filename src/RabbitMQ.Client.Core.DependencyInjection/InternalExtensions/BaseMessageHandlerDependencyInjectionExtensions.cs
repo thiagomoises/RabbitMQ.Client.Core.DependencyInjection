@@ -62,8 +62,7 @@ namespace RabbitMQ.Client.Core.DependencyInjection.InternalExtensions
             {
                 return;
             }
-
-            var intersectRoutePatterns = routePatterns.Intersect(((MessageHandlerOrderingModel)messageHandlerOrderingModel.ImplementationInstance).RoutePatterns);
+            var intersectRoutePatterns = messageHandlerOrderingModel.ImplementationInstance != null ? routePatterns.Intersect(((MessageHandlerOrderingModel)messageHandlerOrderingModel.ImplementationInstance).RoutePatterns) : Array.Empty<string>();
             throw new ArgumentException($"A message handler {nameof(TImplementation)} for an exchange {exchange} has already been configured for route patterns[{string.Join(", ", intersectRoutePatterns)}] with an order {order}.");
         }
     }

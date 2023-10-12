@@ -29,7 +29,7 @@ namespace RabbitMQ.Client.Core.DependencyInjection
         /// <param name="eventArgs">Message event args.</param>
         /// <typeparam name="T">Type of a message body.</typeparam>
         /// <returns>Object of type <see cref="T"/>.</returns>
-        public static T GetPayload<T>(this BasicDeliverEventArgs eventArgs)
+        public static T? GetPayload<T>(this BasicDeliverEventArgs eventArgs)
         {
             eventArgs.EnsureIsNotNull();
             var messageString = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
@@ -71,7 +71,7 @@ namespace RabbitMQ.Client.Core.DependencyInjection
         /// <param name="anonymousTypeObject">An anonymous object base.</param>
         /// <typeparam name="T">Type of an anonymous object.</typeparam>
         /// <returns>Anonymous object.</returns>
-        public static T GetAnonymousPayload<T>(this BasicDeliverEventArgs eventArgs, T anonymousTypeObject)
+        public static T? GetAnonymousPayload<T>(this BasicDeliverEventArgs eventArgs, T anonymousTypeObject)
         {
             eventArgs.EnsureIsNotNull();
             var messageString = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
@@ -86,7 +86,7 @@ namespace RabbitMQ.Client.Core.DependencyInjection
         /// <param name="settings">Serializer settings <see cref="JsonSerializerSettings"/>.</param>
         /// <typeparam name="T">Type of an anonymous object.</typeparam>
         /// <returns>Anonymous object.</returns>
-        public static T GetAnonymousPayload<T>(this BasicDeliverEventArgs eventArgs, T anonymousTypeObject, JsonSerializerSettings settings)
+        public static T? GetAnonymousPayload<T>(this BasicDeliverEventArgs eventArgs, T anonymousTypeObject, JsonSerializerSettings settings)
         {
             eventArgs.EnsureIsNotNull();
             var messageString = Encoding.UTF8.GetString(eventArgs.Body.ToArray());
